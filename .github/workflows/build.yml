@@ -1,0 +1,21 @@
+name: Build ItemShooter
+on:
+  workflow_dispatch:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '6.0.x'
+      - name: Unzip game assemblies
+        run: unzip -q Il2CppAssemblies.zip -d libs
+      - name: Build
+        run: dotnet build ItemShooter.csproj -c Release
+      - name: Upload DLL
+        uses: actions/upload-artifact@v4
+        with:
+          name: ItemShooter-dll
+          path: bin/Release/net6.0/ItemShooter.dll

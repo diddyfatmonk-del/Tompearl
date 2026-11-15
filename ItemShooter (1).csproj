@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>ItemShooter</AssemblyName>
+    <RootNamespace>ItemShooter</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Il2CppPath>libs/Il2CppAssemblies/Il2CppAssemblies</Il2CppPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="MelonLoader"><HintPath>MelonLoader.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppInterop.Runtime"><HintPath>Il2CppInterop_Runtime.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="BoneLib"><HintPath>BoneLib.dll</HintPath><Private>false</Private></Reference>
+
+    <Reference Include="Assembly-CSharp"><HintPath>$(Il2CppPath)/Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2CppSLZ.Marrow"><HintPath>$(Il2CppPath)/Il2CppSLZ.Marrow.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="Il2Cppmscorlib"><HintPath>$(Il2CppPath)/Il2Cppmscorlib.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine"><HintPath>$(Il2CppPath)/UnityEngine.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.CoreModule"><HintPath>$(Il2CppPath)/UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="UnityEngine.PhysicsModule"><HintPath>$(Il2CppPath)/UnityEngine.PhysicsModule.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+
+</Project>

@@ -11,7 +11,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Il2CppPath>libs/Il2CppAssemblies/Il2CppAssemblies</Il2CppPath>
+    <Il2CppPath>libs/Il2CppAssemblies</Il2CppPath>
   </PropertyGroup>
 
   <ItemGroup>
